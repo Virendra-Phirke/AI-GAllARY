@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;650&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", Georgia, ui-serif, serif;
+  --color-accent: var(--theme-accent, #E0D8D0);
+  --color-accent-fg: var(--theme-accent-fg, #000000);
+}
+
+:root {
+  --theme-accent: #E0D8D0;
+  --theme-accent-fg: #000000;
+}
+
+:root.theme-emerald {
+  --theme-accent: #10b981;
+  --theme-accent-fg: #000000;
+}
+
+:root.theme-rose {
+  --theme-accent: #f43f5e;
+  --theme-accent-fg: #ffffff;
+}
+
+:root.theme-amber {
+  --theme-accent: #f59e0b;
+  --theme-accent-fg: #000000;
+}
+
+/* Custom scrollbar helpers config for Sophisticated Dark style */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+

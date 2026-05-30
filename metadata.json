@@ -1,0 +1,6 @@
+{
+  "name": "Android Multi Device Image Gallery",
+  "description": "An interactive, adaptive Material Design photo gallery simulating native Android interfaces with dynamic device frame controls, custom filter settings, photo tagging, and real-time Gemini AI description generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
