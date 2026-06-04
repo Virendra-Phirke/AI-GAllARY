@@ -15,7 +15,6 @@ let ai: GoogleGenAI | null = null;
 if (apiKey) {
   ai = new GoogleGenAI({
     apiKey: apiKey,
-    httpOptions: { headers: { "User-Agent": "aistudio-build" } },
   });
 }
 

@@ -25,11 +25,6 @@ let ai: GoogleGenAI | null = null;
 if (apiKey) {
   ai = new GoogleGenAI({
     apiKey: apiKey,
-    httpOptions: {
-      headers: {
-        "User-Agent": "aistudio-build",
-      },
-    },
   });
 } else {
   console.warn("WARNING: GEMINI_API_KEY environment variable is not set. AI feature won't work.");
